@@ -22,10 +22,15 @@ class Banner88x31:
             "https://cyber.dabamos.de/88x31/index5.html",
         ]
 
-    def get_all(self):
+    def get_all(self, url=True):
         """
-        Class: Banner88x31
         Returns the list of all available 88x31 banners
+        Class: Banner88x31
+
+        | Properties  | Details                                                                  |
+        | ----------- | ------------------------------------------------------------------------ |
+        | `url`       | If False, returns only tags. Defaults to `True. Takes `False` or `True`  |
+        
         Example:
         ```python
         banners = Banner88x31()
@@ -46,9 +51,12 @@ class Banner88x31:
                 source = response.content
                 soup = bs4.BeautifulSoup(source, "lxml")
                 for img_tag in soup.find_all("img"):
-                    img_alt.append(
-                        "https://cyber.dabamos.de/88x31/" + img_tag.get("alt") + ".gif"
-                    )
+                    if url == True:
+                        img_alt.append(
+                            "https://cyber.dabamos.de/88x31/" + img_tag.get("alt") + ".gif"
+                        )
+                    else:
+                        img_alt.append(img_tag.get("alt"))
                 return img_alt
             except:
                 return None
