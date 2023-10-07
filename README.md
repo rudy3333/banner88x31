@@ -36,7 +36,7 @@ Contributions are welcome! If you find a bug or have a feature request, please [
 
 ## License
 
-banner88x31 is licensed under the MIT License. See the [LICENSE](https://github.com/rudy3333/banner88x31/LICENSE) file for details.
+banner88x31 is licensed under the MIT License. See the [LICENSE](https://github.com/rudy3333/banner88x31/blob/master/LICENSE) file for details.
 
 ## Contact
 
