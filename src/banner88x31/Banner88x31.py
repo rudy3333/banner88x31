@@ -64,7 +64,29 @@ class Banner88x31:
                 return None
 
     def get_wh(self, tag):
+        """
+        Returns the width and height of the given tag
+        Class: Banner88x31
+
+        | Properties  | Details                                                                  |
+        | ----------- | ------------------------------------------------------------------------ |
+        | `tag`       | Tag of requested image. Takes a string.                                  |
+        
+        Example:
+        ```python
+        banners = Banner88x31()
+        wh = banners.get_wh("amd_powered")
+        ```
+
+        Returns:
+        ```json
+        (85, 30)```
+        """
+        
         url = "https://cyber.dabamos.de/88x31/" + tag + ".gif"
-        img = Image.open(urlopen(url))
-        size = img.size
-        return size
+        try:
+            img = Image.open(urlopen(url))
+            size = img.size
+            return size
+        except:
+            return None
