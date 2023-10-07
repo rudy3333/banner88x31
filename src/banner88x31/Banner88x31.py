@@ -1,5 +1,7 @@
 import requests
 import bs4
+from PIL import Image
+from urllib.request import urlopen
 
 
 class Banner88x31:
@@ -60,3 +62,9 @@ class Banner88x31:
                 return img_alt
             except:
                 return None
+
+    def get_wh(self, tag):
+        url = "https://cyber.dabamos.de/88x31/" + tag + ".gif"
+        img = Image.open(urlopen(url))
+        size = img.size
+        return size
