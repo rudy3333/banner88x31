@@ -2,11 +2,11 @@ import requests
 import bs4
 
 
-class banner88x31:
+class Banner88x31:
     """
-    Create an instance of the `banner88x31` class.
+    Create an instance of the `Banner88x31` class.
     ```python
-    scraper = banner88x31()
+    scraper = Banner88x31()
     ```
     | Methods            | Details                                                  |
     | ------------------ | -------------------------------------------------------- |
@@ -24,11 +24,11 @@ class banner88x31:
 
     def get_all(self):
         """
-        Class: banner88x31
+        Class: Banner88x31
         Returns the list of all available 88x31 banners
         Example:
         ```python
-        banners = banner88x31()
+        banners = Banner88x31()
         result = banners.get_all()
         ```
 
