@@ -9,7 +9,7 @@ banner88x31 is a Python package designed to simplify the process of scraping 88x
 
 ## Features
 
-- **Easy to Use**: banner88x31 provides a simple and intuitive API for scraping 88x31 banners.
+- **Easy to Use**: banner88x31 provides a simple and intuitive interface for scraping 88x31 banners.
 
 - **Robust**: banner88x31 is built on top of reliable web scraping libraries, ensuring stability and consistent results.
 
