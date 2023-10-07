@@ -18,6 +18,15 @@ You can install banner88x31 via pip:
 ```bash
 pip install banner88x31
 ```
+## Usage
+Here's a quick example of how to use banner88x31 to scrape 88x31 banners:
+
+```python
+from banner88x31 import Banner88x31
+scraper = Banner88x31()
+result = scraper.get_all()
+```
+
 
 ## Contributing
 
@@ -29,6 +38,7 @@ banner88x31 is licensed under the MIT License. See the [LICENSE](https://github.
 
 ## Contact
 
-If you have any questions, suggestions, or need assistance, feel free to contact me at [mmax3163@gmail.com](mailto:mmax3163@gmail.com).
+If you have any questions, suggestions, or need assistance, feel free to contact me.
 
 Happy scraping with banner88x31! 😄
+
