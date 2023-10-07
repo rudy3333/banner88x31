@@ -1,7 +1,8 @@
 
 # banner88x31
-
 ![Banner88x31 Logo](https://cyber.dabamos.de/88x31/88x31.gif)
+
+
 [![python package publishment](https://github.com/rudy3333/banner88x31/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rudy3333/banner88x31/actions/workflows/python-publish.yml)
 
 banner88x31 is a Python package designed to simplify the process of scraping 88x31 banners. These small banners, commonly used for displaying affiliations or links, can be challenging to collect manually. With banner88x31, you can automate this task and retrieve these banners effortlessly.
